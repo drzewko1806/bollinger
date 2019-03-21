@@ -1,0 +1,82 @@
+<!DOCTYPE HTML> 
+<html lang="pl">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+  <title>Wstega Bollingera</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <script type="text/javascript" src="scripts/fileTools.js"></script>
+  <script type="text/javascript" src="scripts/logic.js"></script>
+  <script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+ </head>
+ <body>
+	<div class="wrapper">
+		<div class="uploadFileDiv">
+			<input type="file" id="upload" onchange="doUpload(this);"></input>
+		</div>
+		<div class="entryDataDiv">
+			<label class="title" id="entryLabel" for="entryContent">Dane wejsciowe:</label>
+			<textarea class="data" id="entryContent"></textarea>
+			<button class="button" id="clearEntry" onclick="clearEntryContent();">wyczysc</button>
+			<label class="title" id="sessionLabel" for="entrySessionNumber">Ilosc sesji:</label>
+			<textarea class="data" id="entrySessionNumber">9</textArea>
+			<label class="title" id="moneyLabel" for=money">Kapital:</label>
+			<textarea class="data" id="money">1000000</textArea>
+			<button class="button" id="startButton" onclick="startAlgorithm();">start</button>
+		</div>
+		<div class="resultDiv">
+			<div class="column">
+				<div class="semiColumn">
+					<label class="title" id="smaLabel" for="smaData">SMA:</label>
+				</div>
+				<div class="semiColumn">
+					<input class="checkBox" type="checkBox" id="smaChecked" onChange="checkCheckBoxes();"></input>
+				</div>
+				<textarea class="result" id="smaData"></textarea>
+			</div>
+			<div class="column">
+				<div class="semiColumn">
+					<label class="title" id="deviationLabel" for="deviationData">Odchylenie:</label>
+				</div>
+				<div class="semiColumn">
+				</div>
+				<textarea class="result" id="deviationData"></textarea>
+			</div>
+			<div class="column">
+				<div class="semiColumn">
+					<label class="title" id="upperLabel" for="upperData">Wstega gorna:</label>
+				</div>
+				<div class="semiColumn">
+					<input class="checkBox" type="checkBox" id="upperChecked" onChange="checkCheckBoxes();"></input>
+				</div>
+				<textarea class="result" id="upperData"></textarea>
+			</div>
+			<div class="column">
+				<div class="semiColumn">
+					<label class="title" id="lowerLabel" for="lowerData">Wstega dolna:</label>
+				</div>
+				<div class="semiColumn">
+					<input class="checkBox" type="checkBox" id="lowerChecked" onChange="checkCheckBoxes();"></input>
+				</div>
+				<textarea class="result" id="lowerData"></textarea>
+			</div>
+			<div class="column">
+				<div class="semiColumn">
+					<label class="title" id="priceLabel" for="lowerData">Cena:</label>
+				</div>
+				<div class="semiColumn">
+					<input class="checkBox" type="checkBox" id="priceChecked" onChange="checkCheckBoxes();"></input>
+				</div>
+				<textarea class="result" id="priceData"></textarea>
+			</div>
+		</div>
+		<div class="chart">
+		<canvas id="myChart"></canvas>
+		</div>
+		<div class ="invest">
+			<label class="title" id="investLabel" for="entryContent">Wynik:</label>
+			<textarea class="data" id="invest"></textarea>
+		</div>
+	</div>
+ </body>
+</html>

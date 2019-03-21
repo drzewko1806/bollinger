@@ -1,0 +1,110 @@
+body{
+	background-color:PapayaWhip;
+}
+.wrapper{
+	width:100%
+}
+.uploadFileDiv{
+	width:100%;
+	padding: 25px 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+.entryDataDiv{
+	margin-left:auto;
+	margin-right:auto;
+}
+.resultDiv:after{
+	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	content: "";
+	display: table;
+	clear: both;
+}
+.title{
+	margin: 0 auto;
+	display:block;
+	width:140px;
+	padding:10px 0;
+	text-align:center;
+}
+.data{
+	margin: 0 auto;
+	display:block;
+	width:300px;
+}
+.column {
+  float: left;
+  width: 20%;
+}
+.semiColumn {
+	float: left;
+	width: 50%;
+}
+.checkBox{
+	margin: 0 auto;
+	display:block;
+	width:140px;
+	margin-top: 10px;
+	text-align:center;
+	visibility:hidden;
+}
+
+.result {
+	margin: 0 auto;
+	display:block;
+	width:200px;
+	min-height:150px;
+}
+
+
+#upload{
+	margin: 0 auto;
+	display:block;
+	width:250px;
+}
+#entryLabel{
+	margin: 0 auto;
+	display:block;
+	width:140px;
+	padding:10px 0;
+	text-align:center;
+}
+#entryContent{
+	margin: 0 auto;
+	display:block;
+	width:300px;
+	min-height:250px;
+}
+#startButton{
+	margin: 0 auto;
+	display:block;
+	width:80%;
+	min-height:100px;
+	margin-top:20px;
+}
+#entrySessionNumber{
+	height:20px;
+}
+#money{
+	height:20px;
+}
+#clearEntry{
+	margin: 0 auto;
+	display: block;
+	width: 300px;
+	text-align:center;
+}
+
+#investLabel{
+	visibility: hidden;
+}
+
+#invest{
+	visibility: hidden;
+	min-height:200px;
+	width:50%;	
+}
+
+
